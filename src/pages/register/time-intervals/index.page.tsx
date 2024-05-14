@@ -73,6 +73,7 @@ export default function TimeIntervals() {
     control,
     watch,
     formState: { isSubmitting, errors },
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } = useForm<TimeIntervalsFormInput, any, TimeIntervalsFormOutput>({
     resolver: zodResolver(timeIntervalsFormSchema),
     defaultValues: {
